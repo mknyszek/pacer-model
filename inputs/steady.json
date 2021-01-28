@@ -1,0 +1,709 @@
+{
+	"global": {
+		"gamma": 2,
+		"globals_bytes": 8192,
+		"init_live_heap": 4000000
+	},
+	"cycles": [
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 2.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 2.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.5,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.5,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.25,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.25,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		},
+		{
+			"alloc_rate": 1.0,
+			"scan_rate": 31.0,
+			"growth_rate": 1.0,
+			"scannable_frac": 1,
+			"stack_bytes": 8192
+		}
+	]
+}
