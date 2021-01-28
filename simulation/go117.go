@@ -1,8 +1,13 @@
-package main
+package simulation
 
-type pacerNewSim struct {
-	ScenarioGlobals
-	Controller *Controller
+import (
+	"github.com/mknyszek/pacer-model/controller"
+	"github.com/mknyszek/pacer-model/scenario"
+)
+
+type go117 struct {
+	scenario.Globals
+	ctrl controller.Controller
 
 	// State
 	gc                      int
@@ -13,7 +18,7 @@ type pacerNewSim struct {
 	rValue                  float64
 }
 
-func (s *pacerNewSim) Step(gc *Cycle) Result {
+func (s *go117) Step(gc *scenario.Cycle) Result {
 	// Simulate up to when GC starts.
 	//
 	// 1. Figure out the goal.
@@ -113,7 +118,7 @@ func (s *pacerNewSim) Step(gc *Cycle) Result {
 
 	rMeasured := float64(peakHeap-triggerPoint) / float64(totalScanWork-assistScanWork)
 
-	s.rValue += s.Controller.Next(s.rValue, rMeasured)
+	s.rValue += s.ctrl.Next(s.rValue, rMeasured)
 	if s.rValue < 0.05 {
 		s.rValue = 0.05
 	} else if s.rValue > s.Gamma-0.05 {

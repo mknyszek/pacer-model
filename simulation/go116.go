@@ -1,7 +1,11 @@
-package main
+package simulation
 
-type pacerOldSim struct {
-	ScenarioGlobals
+import (
+	"github.com/mknyszek/pacer-model/scenario"
+)
+
+type go116 struct {
+	scenario.Globals
 
 	// State
 	gc                      int
@@ -13,7 +17,7 @@ type pacerOldSim struct {
 	triggerRatio            float64
 }
 
-func (s *pacerOldSim) Step(gc *Cycle) Result {
+func (s *go116) Step(gc *scenario.Cycle) Result {
 	// Simulate up to when GC starts.
 	//
 	// 1. Figure out the goal.
