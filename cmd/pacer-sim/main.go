@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strings"
 
 	"github.com/mknyszek/pacer-model/controller"
 	"github.com/mknyszek/pacer-model/scenario"
@@ -15,10 +16,16 @@ import (
 var (
 	genJSONFlag    *bool   = flag.Bool("json", false, "generate a JSON file instead of a CSV")
 	ctrlConfigFlag *string = flag.String("controller-config", "", "file containing JSON controller configuration (optional, default parameters used otherwise)")
+	listFlag       *bool   = flag.Bool("l", false, "list available pacers")
 )
 
 func run() error {
 	flag.Parse()
+
+	if *listFlag {
+		fmt.Println(strings.Join(simulation.Simulators(), "\n"))
+		return nil
+	}
 
 	if flag.NArg() != 2 {
 		return fmt.Errorf("expected 2 arguments: pacer type and scenario file")

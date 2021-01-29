@@ -353,7 +353,7 @@
     ],
     "global": {
         "gamma": 2,
-        "globals_bytes": 32768,
+        "globals_bytes": 67108864,
         "init_live_heap": 2097152
     }
 }

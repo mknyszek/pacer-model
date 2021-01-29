@@ -1,350 +1,350 @@
 {
     "cycles": [
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.020932057595924,
             "scan_rate": 31,
             "growth_rate": 2,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0881018176090025,
             "scan_rate": 31,
             "growth_rate": 1.875,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.032912010643698,
             "scan_rate": 31,
             "growth_rate": 1.75,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.987542837437396,
             "scan_rate": 31,
             "growth_rate": 1.625,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9849274994142532,
             "scan_rate": 31,
             "growth_rate": 1.5,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0373646145734219,
             "scan_rate": 31,
             "growth_rate": 1.375,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9131274038434952,
             "scan_rate": 31,
             "growth_rate": 1.25,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9313038509465582,
             "scan_rate": 31,
             "growth_rate": 1.125,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9193939037828969,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9601823721170574,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0030425257004132,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0627279921980193,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.942852774516475,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9761314378599372,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9636116348660659,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9937779689804846,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9566068302360891,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9586203714673631,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0358169351840432,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9437106105185529,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9406373753294646,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9721742833713812,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0141346552142045,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0724982874895772,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9586228489107717,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9594165127112583,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0505146071103224,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9413165323827397,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0730670026003122,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.039343833149327,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0047640612100002,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9056606166651779,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9316656555490255,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.021450687909103,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0950483237721156,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9158907246747744,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0189617195366125,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9118241302627751,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.0384049174706225,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.960304536201312,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.934653247636541,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.008219971001747,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.008831114600177,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9557015243632218,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9846304403143656,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.006117143070141,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9507081001030121,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9564161989929849,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 1.057720983003869,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,
             "stack_bytes": 8192
         },
         {
-            "alloc_rate": 1,
+            "alloc_rate": 0.9723610960960634,
             "scan_rate": 31,
             "growth_rate": 1,
             "scannable_frac": 1,

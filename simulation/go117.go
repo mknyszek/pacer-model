@@ -118,6 +118,7 @@ func (s *go117) Step(gc *scenario.Cycle) Result {
 
 	rMeasured := float64(peakHeap-triggerPoint) / float64(totalScanWork-assistScanWork)
 
+	thisR := s.rValue
 	s.rValue += s.ctrl.Next(s.rValue, rMeasured)
 	if s.rValue < 0.05 {
 		s.rValue = 0.05
@@ -134,7 +135,7 @@ func (s *go117) Step(gc *scenario.Cycle) Result {
 
 	// Return result.
 	return Result{
-		R:             s.rValue,
+		R:             thisR,
 		LiveBytes:     heapSurvived,
 		LiveScanBytes: heapScannableSurvived,
 		GCUtilization: actualU,
