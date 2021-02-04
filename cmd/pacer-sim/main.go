@@ -75,7 +75,7 @@ func run() error {
 		}
 		fmt.Println(string(results))
 	} else {
-		printCSV(scn.Cycles, r)
+		printCSV(&scn, r)
 	}
 	return nil
 }
@@ -87,10 +87,11 @@ func main() {
 	}
 }
 
-func printCSV(c []scenario.Cycle, r []simulation.Result) {
-	fmt.Println("Allocation Rate,Survival Rate,Scan Rate,Scannable Rate,Stack Bytes,R,Live Bytes,Scannable Live Bytes,Utilization,Trigger,Peak")
+func printCSV(ex *scenario.Execution, r []simulation.Result) {
+	fmt.Println("Allocation Rate,Growth Rate,Scan Rate,Scannable Rate,Stack Bytes,R,Live Bytes,Scannable Live Bytes,Goal,Actual Utilization,Target Utilization,Trigger,Peak")
+	c := ex.Cycles
 	for i := range r {
-		fmt.Printf("%f,%f,%f,%f,%d,%f,%d,%d,%f,%d,%d\n",
+		fmt.Printf("%f,%f,%f,%f,%d,%f,%d,%d,%d,%f,%f,%d,%d\n",
 			c[i].AllocRate,
 			c[i].GrowthRate,
 			c[i].ScanRate,
@@ -99,7 +100,9 @@ func printCSV(c []scenario.Cycle, r []simulation.Result) {
 			r[i].R,
 			r[i].LiveBytes,
 			r[i].LiveScanBytes,
-			r[i].GCUtilization,
+			r[i].GoalBytes,
+			r[i].ActualGCUtilization,
+			r[i].TargetGCUtilization,
 			r[i].TriggerPoint,
 			r[i].PeakBytes,
 		)

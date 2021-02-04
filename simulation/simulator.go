@@ -51,10 +51,12 @@ func NewSimulator(name string, globals scenario.Globals, ctrl controller.Control
 }
 
 type Result struct {
-	R             float64 `json:"r"`
-	LiveBytes     uint64  `json:"live"`
-	LiveScanBytes uint64  `json:"scan"`
-	GCUtilization float64 `json:"u"`
-	TriggerPoint  uint64  `json:"trigger"`
-	PeakBytes     uint64  `json:"peak"`
+	R                   float64 `json:"r"`
+	LiveBytes           uint64  `json:"live"`
+	LiveScanBytes       uint64  `json:"scan"`
+	GoalBytes           uint64  `json:"goal"`
+	ActualGCUtilization float64 `json:"actual_u"`
+	TargetGCUtilization float64 `json:"target_u"`
+	TriggerPoint        uint64  `json:"trigger"`
+	PeakBytes           uint64  `json:"peak"`
 }

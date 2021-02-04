@@ -92,11 +92,11 @@ var generators = map[string]func() exec{
 				GlobalsBytes: 32 << 10,
 				InitialHeap:  2 << 20,
 			},
-			allocRate:     constant(1.0),
+			allocRate:     constant(4.0),
 			scanRate:      constant(31.0),
 			growthRate:    constant(2.0).mix(ramp(-1.0, 8)),
 			scannableFrac: constant(1.0),
-			stackBytes:    constant(2048).mix(ramp(64<<20, 8)),
+			stackBytes:    constant(2048).mix(ramp(128<<20, 8)),
 			length:        50,
 		}
 	},
@@ -104,10 +104,10 @@ var generators = map[string]func() exec{
 		return exec{
 			globals: scenario.Globals{
 				Gamma:        2,
-				GlobalsBytes: 64 << 20,
+				GlobalsBytes: 128 << 20,
 				InitialHeap:  2 << 20,
 			},
-			allocRate:     constant(1.0),
+			allocRate:     constant(4.0),
 			scanRate:      constant(31.0),
 			growthRate:    constant(2.0).mix(ramp(-1.0, 8)),
 			scannableFrac: constant(1.0),
@@ -137,12 +137,42 @@ var generators = map[string]func() exec{
 				GlobalsBytes: 32 << 10,
 				InitialHeap:  2 << 20,
 			},
-			allocRate:     random(0.1).offset(1),
+			allocRate:     random(0.4).offset(4),
 			scanRate:      constant(31.0),
-			growthRate:    constant(2.0).mix(ramp(-1.0, 8)),
+			growthRate:    constant(2.0).mix(ramp(-1.0, 8), random(0.01)),
 			scannableFrac: constant(1.0),
 			stackBytes:    constant(8192),
 			length:        50,
+		}
+	},
+	"high-GOGC": func() exec {
+		return exec{
+			globals: scenario.Globals{
+				Gamma:        8,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:     random(0.2).offset(5),
+			scanRate:      constant(31.0),
+			growthRate:    constant(2.0).mix(ramp(-1.0, 8), random(0.01), unit(7).delay(25)),
+			scannableFrac: constant(1.0),
+			stackBytes:    constant(8192),
+			length:        50,
+		}
+	},
+	"heavy-alloc": func() exec {
+		return exec{
+			globals: scenario.Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:     random(1.0).offset(10),
+			scanRate:      constant(31.0),
+			growthRate:    constant(2.0).mix(ramp(-1.0, 8), random(0.01)),
+			scannableFrac: constant(1.0),
+			stackBytes:    constant(8192),
+			length:        100,
 		}
 	},
 }
@@ -152,6 +182,17 @@ type stream func() float64
 func constant(c float64) stream {
 	return func() float64 {
 		return c
+	}
+}
+
+func unit(amp float64) stream {
+	dropped := false
+	return func() float64 {
+		if dropped {
+			return 0
+		}
+		dropped = true
+		return amp
 	}
 }
 
