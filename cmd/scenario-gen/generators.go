@@ -148,19 +148,19 @@ var generators = map[string]func() exec{
 	"high-GOGC": func() exec {
 		return exec{
 			globals: scenario.Globals{
-				Gamma:        8,
+				Gamma:        16,
 				GlobalsBytes: 32 << 10,
 				InitialHeap:  2 << 20,
 			},
 			allocRate:     random(0.2).offset(5),
 			scanRate:      constant(31.0),
-			growthRate:    constant(2.0).mix(ramp(-1.0, 8), random(0.01), unit(7).delay(25)),
+			growthRate:    constant(2.0).mix(ramp(-1.0, 8), random(0.01), unit(14).delay(25)),
 			scannableFrac: constant(1.0),
 			stackBytes:    constant(8192),
 			length:        50,
 		}
 	},
-	"heavy-alloc": func() exec {
+	"heavy-jitter-alloc": func() exec {
 		return exec{
 			globals: scenario.Globals{
 				Gamma:        2,
@@ -170,6 +170,21 @@ var generators = map[string]func() exec{
 			allocRate:     random(1.0).offset(10),
 			scanRate:      constant(31.0),
 			growthRate:    constant(2.0).mix(ramp(-1.0, 8), random(0.01)),
+			scannableFrac: constant(1.0),
+			stackBytes:    constant(8192),
+			length:        50,
+		}
+	},
+	"heavy-step-alloc": func() exec {
+		return exec{
+			globals: scenario.Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:     constant(1.0).mix(ramp(10.0, 1).delay(50)),
+			scanRate:      constant(31.0),
+			growthRate:    constant(2.0).mix(ramp(-1.0, 8)),
 			scannableFrac: constant(1.0),
 			stackBytes:    constant(8192),
 			length:        100,

@@ -88,10 +88,12 @@ func main() {
 }
 
 func printCSV(ex *scenario.Execution, r []simulation.Result) {
-	fmt.Println("Allocation Rate,Growth Rate,Scan Rate,Scannable Rate,Stack Bytes,R,Live Bytes,Scannable Live Bytes,Goal,Actual Utilization,Target Utilization,Trigger,Peak")
+	fmt.Println("Gamma,Globals Bytes,Allocation Rate,Growth Rate,Scan Rate,Scannable Rate,Stack Bytes,R,Live Bytes,Scannable Live Bytes,Goal,Actual Utilization,Target Utilization,Trigger,Peak")
 	c := ex.Cycles
 	for i := range r {
-		fmt.Printf("%f,%f,%f,%f,%d,%f,%d,%d,%d,%f,%f,%d,%d\n",
+		fmt.Printf("%f,%d,%f,%f,%f,%f,%d,%f,%d,%d,%d,%f,%f,%d,%d\n",
+			ex.Globals.Gamma,
+			ex.Globals.GlobalsBytes,
 			c[i].AllocRate,
 			c[i].GrowthRate,
 			c[i].ScanRate,
