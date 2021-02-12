@@ -17,6 +17,8 @@ type go116 struct {
 	triggerRatio            float64
 }
 
+const go116HeapMinimum = 4 << 20
+
 func (s *go116) Step(gc *scenario.Cycle) Result {
 	// Simulate up to when GC starts.
 	//
@@ -25,8 +27,11 @@ func (s *go116) Step(gc *scenario.Cycle) Result {
 	// 3. Figure out the worst-case scan work.
 
 	heapGoal := uint64(float64(s.liveBytesLast) * s.Gamma)
-	if heapGoal < 4<<20 {
-		heapGoal = 4 << 20
+	if target := gc.HeapTargetBytes; target > 0 && heapGoal < uint64(target) {
+		heapGoal = uint64(target)
+	}
+	if heapGoal < go116HeapMinimum {
+		heapGoal = go116HeapMinimum
 	}
 	if s.gc == 0 {
 		s.triggerRatioRaw = 7.0 / 8.0
@@ -35,9 +40,9 @@ func (s *go116) Step(gc *scenario.Cycle) Result {
 	triggerPoint := uint64(float64(s.liveBytesLast) * (1 + s.triggerRatio))
 	maxScanWork := s.liveScannableLast + uint64(float64(triggerPoint-s.liveBytesLast)*gc.ScannableFrac)
 	expScanWork := uint64(float64(maxScanWork) / s.Gamma)
-	dummyLiveLast := uint64(float64(4<<20) / (1 + s.triggerRatio))
+	dummyLiveLast := uint64(float64(heapGoal) / (1 + s.triggerRatio))
 	if s.gc == 0 {
-		triggerPoint = 4 << 20
+		triggerPoint = heapGoal
 		heapGoal = uint64(float64(dummyLiveLast) * s.Gamma)
 		maxScanWork = dummyLiveLast + uint64(float64(triggerPoint-dummyLiveLast)*gc.ScannableFrac)
 		expScanWork = uint64(float64(maxScanWork) / s.Gamma)
@@ -155,6 +160,17 @@ func (s *go116) Step(gc *scenario.Cycle) Result {
 	// work done last cycle.
 	rValue := float64(heapGoal-triggerPoint) / float64(expScanWork)
 
+	nextHeapGoal := uint64(float64(s.liveBytesLast) * s.Gamma)
+	nextGammaGoal := true
+	if target := gc.HeapTargetBytes; target > 0 && nextHeapGoal < uint64(target) {
+		nextHeapGoal = uint64(target)
+		nextGammaGoal = false
+	}
+	if nextHeapGoal < go116HeapMinimum {
+		nextHeapGoal = go116HeapMinimum
+		nextGammaGoal = false
+	}
+
 	goalGrowthRatio := float64(heapGoal-s.liveBytesLast) / float64(s.liveBytesLast)
 	if s.gc == 0 {
 		goalGrowthRatio = float64(heapGoal-dummyLiveLast) / float64(dummyLiveLast)
@@ -165,12 +181,15 @@ func (s *go116) Step(gc *scenario.Cycle) Result {
 	} else {
 		actualGrowthRatio = float64(peakHeap)/float64(s.liveBytesLast) - 1
 	}
-	s.triggerRatioRaw += 0.5 * (goalGrowthRatio - s.triggerRatioRaw - uActual/uTarget*(actualGrowthRatio-s.triggerRatioRaw))
+	delta := 0.5 * (goalGrowthRatio - s.triggerRatioRaw - uActual/uTarget*(actualGrowthRatio-s.triggerRatioRaw))
+	s.triggerRatioRaw += delta
 	s.triggerRatio = s.triggerRatioRaw
 	if s.triggerRatio < 0.6*(s.Gamma-1) {
 		s.triggerRatio = 0.6 * (s.Gamma - 1)
-	} else if s.triggerRatio > 0.95*(s.Gamma-1) {
+	} else if nextGammaGoal && s.triggerRatio > 0.95*(s.Gamma-1) {
 		s.triggerRatio = 0.95 * (s.Gamma - 1)
+	} else if nextGoalGR := float64(nextHeapGoal)/float64(heapSurvived) - 1; !nextGammaGoal && s.triggerRatio > 0.95*nextGoalGR {
+		s.triggerRatio = 0.95 * nextGoalGR
 	}
 	s.liveBytesLast = heapSurvived
 	s.liveScannableLast = heapScannableSurvived

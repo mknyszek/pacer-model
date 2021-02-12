@@ -18,6 +18,8 @@ type go117 struct {
 	rValue                  float64
 }
 
+const go117HeapMinimum = 2 << 20
+
 func (s *go117) Step(gc *scenario.Cycle) Result {
 	// Simulate up to when GC starts.
 	//
@@ -26,8 +28,11 @@ func (s *go117) Step(gc *scenario.Cycle) Result {
 	// 3. Figure out the worst-case scan work.
 
 	heapGoal := uint64(float64(s.liveBytesLast+gc.StackBytes+s.GlobalsBytes) * s.Gamma)
-	if heapGoal < 4<<20 {
-		heapGoal = 4 << 20
+	if target := gc.HeapTargetBytes; target > 0 && heapGoal < uint64(target) {
+		heapGoal = uint64(target)
+	}
+	if heapGoal < go117HeapMinimum {
+		heapGoal = go117HeapMinimum
 	}
 
 	// expectedScan = liveScannableLast + stackBytes + globalsBytes
@@ -47,7 +52,7 @@ func (s *go117) Step(gc *scenario.Cycle) Result {
 			extraTilTrigger = heapGoal - backwards
 		}
 		triggerPoint = s.liveBytesLast + extraTilTrigger
-		if minTrigger := uint64(float64(s.liveBytesLast) * 1.6); triggerPoint < minTrigger {
+		if minTrigger := uint64(float64(heapGoal-s.liveBytesLast)*0.6) + s.liveBytesLast; triggerPoint < minTrigger {
 			triggerPoint = minTrigger
 			extraTilTrigger = minTrigger - s.liveBytesLast
 		}

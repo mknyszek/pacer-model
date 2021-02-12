@@ -27,7 +27,7 @@ func main() {
 }
 
 func run() error {
-	genNames := Generators()
+	genNames := scenario.Generators()
 	if *listFlag {
 		fmt.Println(strings.Join(genNames, "\n"))
 		return nil
@@ -46,7 +46,7 @@ func run() error {
 		genNames = fNames
 	}
 	for _, name := range genNames {
-		result, err := Generate(name)
+		result, err := scenario.Generate(name)
 		if err != nil {
 			// Internal error.
 			panic(err)
