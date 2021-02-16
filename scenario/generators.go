@@ -215,6 +215,54 @@ var generators = map[string]func() exec{
 			length:          50,
 		}
 	},
+	"low-heap-target": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       random(0.1).offset(4),
+			scanRate:        constant(31.0),
+			growthRate:      constant(1.5).mix(ramp(-0.5, 4), random(0.01), unit(3).delay(25)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(64 << 20),
+			length:          50,
+		}
+	},
+	"step-heap-target": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       random(0.1).offset(4),
+			scanRate:        constant(31.0),
+			growthRate:      constant(2.0).mix(ramp(-1.0, 8), random(0.01)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(-1).mix(constant((256 << 20) + 1).delay(25)),
+			length:          50,
+		}
+	},
+	"heavy-step-alloc-high-heap-target": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       constant(1.0).mix(ramp(10.0, 1).delay(25)),
+			scanRate:        constant(31.0),
+			growthRate:      constant(2.0).mix(ramp(-1.0, 8), random(0.01)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(2 << 30),
+			length:          50,
+		}
+	},
 }
 
 type stream func() float64
