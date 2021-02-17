@@ -231,6 +231,22 @@ var generators = map[string]func() exec{
 			length:          50,
 		}
 	},
+	"very-low-heap-target": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       random(0.1).offset(4),
+			scanRate:        constant(31.0),
+			growthRate:      constant(2.0).mix(ramp(-1.0, 20), random(0.01)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(64 << 20),
+			length:          50,
+		}
+	},
 	"step-heap-target": func() exec {
 		return exec{
 			globals: Globals{
@@ -260,6 +276,70 @@ var generators = map[string]func() exec{
 			scannableFrac:   constant(1.0),
 			stackBytes:      constant(8192),
 			heapTargetBytes: constant(2 << 30),
+			length:          50,
+		}
+	},
+	"exceed-heap-target": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       random(0.1).offset(4),
+			scanRate:        constant(31.0),
+			growthRate:      constant(1.5).mix(ramp(-0.5, 4), random(0.01), unit(6).delay(25)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(64 << 20),
+			length:          50,
+		}
+	},
+	"exceed-heap-target-high-GOGC": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        16,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       random(0.1).offset(4),
+			scanRate:        constant(31.0),
+			growthRate:      constant(1.5).mix(ramp(-0.5, 4), random(0.01), unit(14).delay(25)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(64 << 20),
+			length:          50,
+		}
+	},
+	"low-noise-high-heap-target": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       random(0.2).offset(5),
+			scanRate:        constant(31.0),
+			growthRate:      constant(2.0).mix(ramp(-1.0, 8), random(0.01), unit(14).delay(25)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(2 << 30).mix(random(1 << 20)),
+			length:          50,
+		}
+	},
+	"high-noise-high-heap-target": func() exec {
+		return exec{
+			globals: Globals{
+				Gamma:        2,
+				GlobalsBytes: 32 << 10,
+				InitialHeap:  2 << 20,
+			},
+			allocRate:       random(0.2).offset(5),
+			scanRate:        constant(31.0),
+			growthRate:      constant(2.0).mix(ramp(-1.0, 8), random(0.01), unit(14).delay(25)),
+			scannableFrac:   constant(1.0),
+			stackBytes:      constant(8192),
+			heapTargetBytes: constant(2 << 30).mix(random(512 << 20)),
 			length:          50,
 		}
 	},

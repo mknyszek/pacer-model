@@ -1,401 +1,401 @@
 {
     "cycles": [
         {
-            "alloc_rate": 10.20932057595924,
+            "alloc_rate": 10.561508169116985,
             "scan_rate": 31,
-            "growth_rate": 2.0088101817609,
+            "growth_rate": 1.991842352488815,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.329120106436982,
+            "alloc_rate": 9.106989248988816,
             "scan_rate": 31,
-            "growth_rate": 1.8737542837437395,
+            "growth_rate": 1.8792939163178326,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.849274994142531,
+            "alloc_rate": 9.50152455085836,
             "scan_rate": 31,
-            "growth_rate": 1.753736461457342,
+            "growth_rate": 1.7569726584180632,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.131274038434952,
+            "alloc_rate": 10.947763748141346,
             "scan_rate": 31,
-            "growth_rate": 1.6181303850946558,
+            "growth_rate": 1.6192512189810064,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.193939037828969,
+            "alloc_rate": 9.04306756665121,
             "scan_rate": 31,
-            "growth_rate": 1.4960182372117057,
+            "growth_rate": 1.5089038952077765,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.030425257004131,
+            "alloc_rate": 9.18594031099985,
             "scan_rate": 31,
-            "growth_rate": 1.381272799219802,
+            "growth_rate": 1.3779166674904795,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.42852774516475,
+            "alloc_rate": 9.623771085654107,
             "scan_rate": 31,
-            "growth_rate": 1.2476131437859936,
+            "growth_rate": 1.2489692872788092,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.636116348660659,
+            "alloc_rate": 9.974478497160739,
             "scan_rate": 31,
-            "growth_rate": 1.1243777968980484,
+            "growth_rate": 1.116649593530227,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.56606830236089,
+            "alloc_rate": 10.343658212469279,
             "scan_rate": 31,
-            "growth_rate": 0.9958620371467363,
+            "growth_rate": 0.9980037657884728,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.358169351840433,
+            "alloc_rate": 10.800550294528623,
             "scan_rate": 31,
-            "growth_rate": 0.9943710610518552,
+            "growth_rate": 1.008997664122025,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.406373753294645,
+            "alloc_rate": 9.638662535214234,
             "scan_rate": 31,
-            "growth_rate": 0.9972174283371381,
+            "growth_rate": 0.9999877098750483,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.141346552142045,
+            "alloc_rate": 9.800864634283625,
             "scan_rate": 31,
-            "growth_rate": 1.0072498287489577,
+            "growth_rate": 0.990396173406509,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.586228489107716,
+            "alloc_rate": 10.290077732038895,
             "scan_rate": 31,
-            "growth_rate": 0.9959416512711259,
+            "growth_rate": 0.9985737686013987,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.505146071103225,
+            "alloc_rate": 9.67919350277462,
             "scan_rate": 31,
-            "growth_rate": 0.994131653238274,
+            "growth_rate": 1.00774895001701,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.730670026003121,
+            "alloc_rate": 9.47265494860872,
             "scan_rate": 31,
-            "growth_rate": 1.0039343833149328,
+            "growth_rate": 1.0053001642986656,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.047640612100002,
+            "alloc_rate": 9.071509294872168,
             "scan_rate": 31,
-            "growth_rate": 0.9905660616665178,
+            "growth_rate": 1.0045515451208304,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.316656555490255,
+            "alloc_rate": 10.25167325391625,
             "scan_rate": 31,
-            "growth_rate": 1.0021450687909104,
+            "growth_rate": 1.0002617501217572,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.950483237721157,
+            "alloc_rate": 9.144896713584703,
             "scan_rate": 31,
-            "growth_rate": 0.9915890724674774,
+            "growth_rate": 1.0044845811691834,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.189617195366125,
+            "alloc_rate": 10.759689692611419,
             "scan_rate": 31,
-            "growth_rate": 0.9911824130262775,
+            "growth_rate": 1.0095552695471544,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.384049174706224,
+            "alloc_rate": 10.695000524529362,
             "scan_rate": 31,
-            "growth_rate": 0.9960304536201312,
+            "growth_rate": 1.0066439587629987,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.346532476365411,
+            "alloc_rate": 9.495689046373991,
             "scan_rate": 31,
-            "growth_rate": 1.0008219971001746,
+            "growth_rate": 1.0082679812587294,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.08831114600177,
+            "alloc_rate": 9.150074420269307,
             "scan_rate": 31,
-            "growth_rate": 0.9955701524363222,
+            "growth_rate": 1.0067020760230871,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.846304403143655,
+            "alloc_rate": 10.258663383290601,
             "scan_rate": 31,
-            "growth_rate": 1.0006117143070141,
+            "growth_rate": 1.0050348115779346,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.507081001030121,
+            "alloc_rate": 10.2640068675776,
             "scan_rate": 31,
-            "growth_rate": 0.9956416198992984,
+            "growth_rate": 0.9919386842647746,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.57720983003869,
+            "alloc_rate": 9.029654738989754,
             "scan_rate": 31,
-            "growth_rate": 0.9972361096096063,
+            "growth_rate": 1.0016766948372506,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.761086245483234,
+            "alloc_rate": 9.137512390404309,
             "scan_rate": 31,
-            "growth_rate": 0.9959422452127954,
+            "growth_rate": 1.00996547622017,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.788723458660908,
+            "alloc_rate": 10.298376833196848,
             "scan_rate": 31,
-            "growth_rate": 0.9919490923679823,
+            "growth_rate": 1.009709311572665,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.953833737172525,
+            "alloc_rate": 10.669611520438425,
             "scan_rate": 31,
-            "growth_rate": 0.9914858199789969,
+            "growth_rate": 0.9966411217143812,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.444578834013576,
+            "alloc_rate": 10.322786361166685,
             "scan_rate": 31,
-            "growth_rate": 1.0036215662478514,
+            "growth_rate": 1.0091204125319322,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.483030177094305,
+            "alloc_rate": 9.621020552449643,
             "scan_rate": 31,
-            "growth_rate": 0.9962304488862105,
+            "growth_rate": 0.9936878138800406,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.865692857036867,
+            "alloc_rate": 10.934188682743546,
             "scan_rate": 31,
-            "growth_rate": 1.0048369791998364,
+            "growth_rate": 1.006664836310563,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.602110085305323,
+            "alloc_rate": 9.619096901054656,
             "scan_rate": 31,
-            "growth_rate": 1.0046046295458961,
+            "growth_rate": 1.006117435350753,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.365849832907816,
+            "alloc_rate": 9.834651684380765,
             "scan_rate": 31,
-            "growth_rate": 0.9985671416361361,
+            "growth_rate": 1.0043706089870554,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.793983915123745,
+            "alloc_rate": 9.813473550900781,
             "scan_rate": 31,
-            "growth_rate": 1.0036530697602648,
+            "growth_rate": 1.0079160653548829,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.957858711153374,
+            "alloc_rate": 10.916352725205186,
             "scan_rate": 31,
-            "growth_rate": 1.0084442451784346,
+            "growth_rate": 0.9903742644227931,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.181674550707774,
+            "alloc_rate": 10.583344618164165,
             "scan_rate": 31,
-            "growth_rate": 0.9998628399540976,
+            "growth_rate": 0.9984710630777168,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.853973607148829,
+            "alloc_rate": 9.030362554446146,
             "scan_rate": 31,
-            "growth_rate": 1.0090989088083355,
+            "growth_rate": 0.9986539648015813,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.695907927256446,
+            "alloc_rate": 10.809552474131467,
             "scan_rate": 31,
-            "growth_rate": 1.0038167766301136,
+            "growth_rate": 1.0071140882914977,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.421814390599991,
+            "alloc_rate": 9.085843284352668,
             "scan_rate": 31,
-            "growth_rate": 1.0012755919163052,
+            "growth_rate": 1.003180610660155,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.298978921185881,
+            "alloc_rate": 9.695718086260108,
             "scan_rate": 31,
-            "growth_rate": 1.0010353009802555,
+            "growth_rate": 1.0000697358009738,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.511647014983195,
+            "alloc_rate": 10.67989484234112,
             "scan_rate": 31,
-            "growth_rate": 0.998076065715914,
+            "growth_rate": 0.9904621913682109,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.261302234057943,
+            "alloc_rate": 9.248727037199084,
             "scan_rate": 31,
-            "growth_rate": 1.009719294586805,
+            "growth_rate": 0.9952235123837644,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.792683490792433,
+            "alloc_rate": 10.669895012986988,
             "scan_rate": 31,
-            "growth_rate": 0.9964416794104176,
+            "growth_rate": 0.9962960959191195,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.442295530385348,
+            "alloc_rate": 9.015362412948177,
             "scan_rate": 31,
-            "growth_rate": 1.0028907956501867,
+            "growth_rate": 1.0079950025143505,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.171041015083823,
+            "alloc_rate": 9.740535072901022,
             "scan_rate": 31,
-            "growth_rate": 1.0033915059539955,
+            "growth_rate": 0.9920039881853883,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.24545663472741,
+            "alloc_rate": 10.286408053140406,
             "scan_rate": 31,
-            "growth_rate": 0.9973938568727965,
+            "growth_rate": 1.0053977817996618,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.47364509361097,
+            "alloc_rate": 10.582250671323969,
             "scan_rate": 31,
-            "growth_rate": 1.0007056378126882,
+            "growth_rate": 0.9952476381494145,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.374492202802106,
+            "alloc_rate": 9.69372776075851,
             "scan_rate": 31,
-            "growth_rate": 0.9947768140561064,
+            "growth_rate": 0.9942930743075389,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 10.256196342436727,
+            "alloc_rate": 10.644185794353143,
             "scan_rate": 31,
-            "growth_rate": 0.9925350585874521,
+            "growth_rate": 0.9970226859933042,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
         },
         {
-            "alloc_rate": 9.562660587610718,
+            "alloc_rate": 10.198388505011762,
             "scan_rate": 31,
-            "growth_rate": 0.9982064568871256,
+            "growth_rate": 1.0015670251386222,
             "scannable_frac": 1,
             "stack_bytes": 8192,
             "heap_target": -1
