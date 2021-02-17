@@ -323,7 +323,7 @@ var generators = map[string]func() exec{
 			growthRate:      constant(2.0).mix(ramp(-1.0, 8), random(0.01), unit(14).delay(25)),
 			scannableFrac:   constant(1.0),
 			stackBytes:      constant(8192),
-			heapTargetBytes: constant(2 << 30).mix(random(1 << 20)),
+			heapTargetBytes: constant(2 << 30).mix(random(64 << 20)),
 			length:          50,
 		}
 	},
@@ -339,7 +339,7 @@ var generators = map[string]func() exec{
 			growthRate:      constant(2.0).mix(ramp(-1.0, 8), random(0.01), unit(14).delay(25)),
 			scannableFrac:   constant(1.0),
 			stackBytes:      constant(8192),
-			heapTargetBytes: constant(2 << 30).mix(random(512 << 20)),
+			heapTargetBytes: constant(2 << 30).mix(random(1 << 30)),
 			length:          50,
 		}
 	},
